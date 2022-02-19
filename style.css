@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    box-sizing: border-box;
+    background-color: #B4CFB0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+header {
+    display: flex;
+}
+
+.page-select {
+    flex-basis: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.inactive {
+    background-color: #94B49F;
+    color: #E5E3C9;
+}
+.active {
+    background-color: #B4CFB0;
+    color: #789395;
+}
+
+
+/********** Page 1 ***********/
+
+.container {
+    width: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    background-color: #789395;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translate(-50%, -45%);
+}
+.container h1 {
+    color: #E5E3C9;
+}
+.qr-code-container {
+    margin: 40px auto;
+}
+.form-element {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #E5E3C9;
+}
+.form-element:focus {
+    outline: none;
+}
+button {
+    cursor: pointer;
+    background-image: linear-gradient(#E5E3C9,#94B49F);
+    font-size: medium;
+}
+button:hover {
+    background-image: linear-gradient(#94B49F,#94B49F);
+    color: white;
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        width: 100%;
+        padding: 30px 20px;
+    }
+}
+
+/********** Page 2 ***********/
+.page-container {
+    width: 100%;
+}
+.page-container h1 {
+    color: #789395;
+}
+.page-container img {
+    width:100%;
+    position: relative;
+    margin: 25px auto 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+iframe {
+    width:850px;
+    height: 400px;
+}
+@media screen and (max-width:900px) {
+    
+    iframe {
+        width: 90%;
+    }
+}
